@@ -1,0 +1,347 @@
+*=================================
+\* 0. Reset
+\* 1. Globals
+\* 2. Header
+\* 3. Intro
+\* 4. Countries list
+\* 5. Call to action
+\* 6. Footer
+/*===============================*/
+
+@import 'https://fonts.googleapis.com/css?family=Poppins:300,400,700';
+
+/*=================================
+\* 0. Reset
+/*===============================*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*=================================
+\* 1. Globals
+/*===============================*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin: 5px 0;
+}
+h1 {
+    font-size: 40px;
+    line-height: 50px;
+}
+h2 {
+    font-size: 35px;
+    line-height: 45px;
+}
+h3 {
+    font-size: 28px;
+    line-height: 35px;
+}
+.lead {
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.btn:hover {
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.link-small {
+    font-size: 0.5em;
+}
+/*=================================
+\* 2. Grid
+/*===============================*/
+.row {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: stretch;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.col {
+    width: 50%;
+    float: left;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: 50% 50%;
+    min-height: 400px;
+}
+/*=================================
+\* 3. Intro
+/*===============================*/
+#intro {
+    background-image: url(wallpapers_21779.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+    padding-top: 30vh;
+}
+
+.main-title-wrapper {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.main-title {
+    color: white;
+}
+.btn-main {
+    padding: 10px 30px;
+    color: white;
+    border: 2px white solid;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 300;
+}
+.lead{
+    color:black;
+    background-color: rgba(255, 255, 255, 0.5);;
+}
+.btn-main:hover {
+    background-color: white;
+    color: #474747;
+}
+/*=================================
+\* 4. Cities
+/*===============================*/
+.rome { background-image: url(polya.romanovskaya_118800264_1018960535220492_433235035275029576_n.jpg);
+    background-size: contain;
+}
+.paris { background-image: url(polya.romanovskaya_119461181_933583100505602_2508108972174506258_n.jpg); 
+    background-size: contain;
+}
+.new-york { background-image: url(polya.romanovskaya_123773634_158036436000949_6708531532807664649_n.jpg); 
+background-size: contain;
+}
+
+
+.city-desc {
+    padding: 100px;
+}
+/*=================================
+\* 5. Subscribe
+/*===============================*/
+#subscribe {
+    background-color: #474747;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+.subscribe-wrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+#subscribe-form {
+    padding: 20px 0;
+}
+.text-field,
+.submit-field {
+    float: left;
+    padding: 0 10px;
+}
+.text-field {
+    width: 70%;
+}
+.submit-field {
+    width: 30%;
+}
+#subscribe-email,
+#subscribe-submit {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+.input-field {
+    padding: 8px;
+    border: none;
+    background-color: rgba(256,256,256,.3);
+    color: #fff;
+}
+.btn-submit {
+    padding: 5px 20px;
+    border: 2px #fff solid;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn-submit:hover {
+    background-color: #fff;
+    color: #090;
+}
+a{
+    color:white;
+}
+/*=================================
+\* 6. Footer
+/*===============================*/
+footer {
+    background-color: #494949;
+    color: #fff;
+    padding: 10px 0;
+}
+.credits {
+    text-align: center;
+}
+
+.credit-link {
+    color: #cce6ff;
+    text-decoration: none;
+}
+.credit-link:hover {
+    color: #99ceff;
+}
+/*=================================
+\* 7. Media queries
+/*===============================*/
+@media (min-width: 1500px) {
+    body {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .main-title {
+        font-size: 60px;
+        line-height: 75px;
+    }
+    
+    #subscribe {
+        padding: 100px 0;
+    }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+    .subscribe-wrapper {
+        width: 75%;
+    }
+    #intro {
+        padding: 50px 0;
+        height: auto;
+    }
+    .main-title-wrapper {
+        width: 75%;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .lead {
+        font-size: 1em;
+    }
+    .main-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row.col-rev {
+        flex-direction: column-reverse;
+    }
+    .col {
+        width: 100%;
+        min-height: 150px;
+    }
+    #intro {
+        padding: 30px 0;
+        height: auto;
+    }
+    .main-title-wrapper {
+        width: 90%;
+    }
+    .city-desc {
+        padding: 40px;
+    }
+    .subscribe-wrapper {
+        width: 90%;
+    }
+    .credit-item {
+        font-size: 12px;
+        line-height: 14px;
+        display: block;
+        margin: 5px 0;
+    }
+    .credit-item + .credit-item {
+        border: none;
+    }
+}
+@media (max-width: 500px) {
+    .text-field,
+    .submit-field {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
